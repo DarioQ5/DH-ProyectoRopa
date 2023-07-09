@@ -17,10 +17,13 @@ Integrantes:
 -Florencia Rocio Gaspar
 -Maité Rebeca Aramayo
 -Vanina Zulema Caceres 
--Juaquin Janco 
+-Joaquin Janco 
+-Ronald Guerra
 
 Sitios de referencia
 H&M: https://www2.hm.com/
 Forever 21: https://www.forever21.com/
 Uniqlo: https://www.uniqlo.com/
 Mercado Libre: https://www.mercadolibre.com.ar/c/ropa-y-accesorios#nav-header
+Cartzilla: https://cartzilla.createx.studio/index.html
+Descripción: Los siguientes enlaces nos ayudaron en el diseño de la creación del wireframes.
