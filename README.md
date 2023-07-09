@@ -12,6 +12,13 @@ Nuestra tienda cuenta con diferentes categorías de productos, que incluyen:
 ▲Ropa para mujeres: vestidos, blusas, faldas, pantalones, abrigos, ropa de baño, lencería, complementos, entre otros.
 ▲Ropa para niños: conjuntos, camisetas, pantalones, chaquetas, ropa de dormir, accesorios, entre otros.
 
+Integrantes:
+-Dario Quispe
+-Florencia Rocio Gaspar
+-Maité Rebeca Aramayo
+-Vanina Zulema Caceres 
+-Juaquin Janco 
+
 Sitios de referencia
 H&M: https://www2.hm.com/
 Forever 21: https://www.forever21.com/
