@@ -1,44 +1,133 @@
 <!DOCTYPE html>
-<html lang = "es-AR">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DH-Proyecto Ropa</title>
-    </head>
-    <body>
-        <header>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa Online</title>
+    <link href="css/index.css" rel="stylesheet">
 
-            <nav>
+</head>
+<body>
+    <header>
+        <div class="header-container-top">
+            <!-- Barra de busqueda -->
+            <div class="logo">
+
+            </div>
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar productos...">
+                <button>Buscar</button>
+            </div>
+            <div>
                 <ul>
-                    <li>
-                        <a href="/products">
-                            Detalles del Producto
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/carrito">
-                            Carrito de Compras
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/registration">
-                            Registro
-                        </a>
-                    </li>
-                    <li>
-                        <a href="login">
-                            Historial de Compras
-                        </a>
-                    </li>
+                    <li><a href="/login">INICIAR SESION</a></li>
+                    <li><a href="/registration">REGISTRARSE</a></li>
+                    <li><a href="/carrito">CARRITO</a></li>
                 </ul>
-   
-            </nav>
-        </header>
-        <main>
+            </div>
 
-        </main>
-        <footer>
-       
-        </footer>
-    </body>
+        </div>
+        <div class="header-container-bot">
+            <!-- Barra de navegacion -->
+            <nav class="barra-navegacion">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#hombres">HOMBRES</a></li>
+                    <li><a href="#mujeres">MUJERES</a></li>
+                    <li><a href="#ninos">NIÑOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-cotainer-top">
+            <div class="tarjeta-top-izquierdo">
+                <h1>Hombres</h1>
+            </div>
+            <div class="tarjeta-top-derecho">
+                <h1>Mujeres</h1>
+            </div>
+        </div>
+        <section id="descripcion">
+            <h2>Nuestra Tienda de Ropa Online</h2>
+            <p>Nuestra tienda de ropa online ofrece una amplia selección de prendas de vestir para hombres, mujeres y niños. Trabajamos con marcas reconocidas para ofrecer a nuestros clientes productos de alta calidad y con las últimas tendencias de moda.</p>
+        </section>
+
+        <section id="hombres">
+            <h2>Ropa para Hombres</h2>
+
+            <div class="contenedor-producto">
+
+                <div class="producto">
+                    <img src="ruta-imagen1.jpg" alt="Camisa de hombre">
+                    <h2>Camisa de Hombre</h2>
+                    <p class="precio">$39.99</p>
+                    <p class="descripcion">Camisa de manga larga con estampado otoñal. Ideal para ocasiones casuales y formales.</p>
+                    <button>Agregar al carrito</button>
+                </div>
+    
+                <div class="producto">
+                    <img src="ruta-imagen2.jpg" alt="Vestido para mujer">
+                    <h2>Vestido para Mujer</h2>
+                    <p class="precio">$49.99</p>
+                    <p class="descripcion">Vestido elegante con diseño floral perfecto para el otoño.</p>
+                    <button>Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="ruta-imagen2.jpg" alt="Vestido para mujer">
+                    <h2>Vestido para Mujer</h2>
+                    <p class="precio">$49.99</p>
+                    <p class="descripcion">Vestido elegante con diseño floral perfecto para el otoño.</p>
+                    <button>Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="ruta-imagen2.jpg" alt="Vestido para mujer">
+                    <h2>Vestido para Mujer</h2>
+                    <p class="precio">$49.99</p>
+                    <p class="descripcion">Vestido elegante con diseño floral perfecto para el otoño.</p>
+                    <button>Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="ruta-imagen2.jpg" alt="Vestido para mujer">
+                    <h2>Vestido para Mujer</h2>
+                    <p class="precio">$49.99</p>
+                    <p class="descripcion">Vestido elegante con diseño floral perfecto para el otoño.</p>
+                    <button>Agregar al carrito</button>
+                </div>
+        
+            </div>
+
+        </section>
+
+        <section id="mujeres">
+            <h2>Ropa para Mujeres</h2>
+        </section>
+
+        <section id="ninos">
+            <h2>Ropa para Niños</h2>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container-top">
+            <div class="seccion">
+
+            </div>
+            <div class="seccion">
+
+            </div>
+            <div class="seccion">
+
+            </div>
+        </div>
+        <div class="header-container-bot">
+
+        </div>
+        <p>Contacto: info@tiendaropa.com</p>
+    </footer>
+</body>
 </html>
