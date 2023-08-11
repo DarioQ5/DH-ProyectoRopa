@@ -1,13 +1,15 @@
 const express = require('express');
 const app = express();
-const path = require('path')
+const mainRouter = require('./router/main')
 
 app.use(express.static('public'));
 
-const port = 8080;
+const port = 3000;
 
 app.listen(port, () => console.log('Server up: ' + port) );
 
+app.use('/',mainRouter)
+/*
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/index.html'));
 });
@@ -31,3 +33,4 @@ app.get('/registration', (req, res) => {
 app.get('/login', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/login.html'));
 });
+*/

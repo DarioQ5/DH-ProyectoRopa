@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alta Facha-Login</title>
+    <title>Alta Facha-Registracion</title>
     <!--CSS-->
     <link href="css/styles.css" rel="stylesheet">
     <!--Fuente-->
@@ -45,8 +45,19 @@
     <main>
         <div class="container">
             <form action="" class="formulario">
-                <h2 class="titulo">INICIAR SESION</h2>
+                <h2 class="titulo">REGISTRARSE</h2>
                 <div class="div_padre">
+
+                    <!--nombre-->
+                    <div class="nombre">
+                        <label for="nombre">nombre completo</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Juan">
+                    </div>
+
+                    <!--apellido-->
+                    <div class="apellido">
+                        <label for="apellido">apellido</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Perez">
                     </div>
                     <!--correo-->
                     <div class="correo">
@@ -60,12 +71,9 @@
                     </div>
                     <!--en caso de que ya tenga cuenta-->
                     <div class="cuenta">
-                        <input class="boton" type="submit" value="acceder">
+                        <p>ya tienes una cuenta? <a href="http://localhost:3555/login">toca aqui</a></p>
+                        <input class="boton" type="submit" value="registrar">
                     </div>
-                    <div class="cuenta">
-                            <p>no tenes cuenta? <a href="http://localhost:3555/register">toca aqui</a></p>
-                            <input class="boton" type="submit" value="registrar">
-                        </div>
                 </div>
             </form>
         </div>

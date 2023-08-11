@@ -52,6 +52,7 @@ header {
 
 .barra-navegacion {
     display: flex;
+    flex: 1;
     justify-content: center;
     background-color: #f8deb8; /* Cambiamos el color de fondo a uno más suave */
     border-radius: 1rem;
