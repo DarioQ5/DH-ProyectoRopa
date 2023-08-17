@@ -77,10 +77,40 @@ header {
     border-radius: 5px;
 }
   
-  .barra-navegacion a:hover {
+.barra-navegacion a:hover {
     background-color: #e0ac69; 
     color: #fff; 
-  }
+}
+
+.form-box {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 50px auto 0;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.form-box h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-weight: bold;
+    margin: 5px;
+    gap: 3em;
+} 
+button {
+    margin: 7px;
+}  
 
 main {
     background-color: #8C9197;

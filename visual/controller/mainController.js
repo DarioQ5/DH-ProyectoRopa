@@ -2,19 +2,19 @@ const path = require('path');
 
 const mainController = {
     renderHome: (req, res) => {
-        res.sendFile(path.resolve(__dirname, '../views/index.html'));
+        res.render('index');
     },
     renderLogin: (req, res) => {
-        res.sendFile(path.resolve(__dirname, '../views/login.html'));
+        res.render('login');
     },
     renderProductCart: (req, res) => {
-        res.sendFile(path.resolve(__dirname, '../views/productCart.html'));
+        res.render('productCart');
     },
     renderProductDetail: (req, res) => {
-        res.sendFile(path.resolve(__dirname, '../views/productDetail.html'));
+        res.render('productDetail');
     },
-    renderRegister: (req, res) => {
-        res.sendFile(path.resolve(__dirname, '../views/register.html'));
+    renderRegistration: (req, res) => {
+        res.render('registration');
     }
 };
 
