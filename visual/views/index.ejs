@@ -27,8 +27,17 @@
             <h2>Ropa para Hombres</h2>
 
             <div class="contenedor-producto">
+                <% for (let i = 0;i < productos.length; i++) {%>
+                    <div class="producto">
+<!--                         <img src="#" alt="#"> -->
+                        <h2><%= productos[i].name %></h2>
+                        <p><%= productos[i].price %></p>
+                        <p><%= productos[i].description %></p>
+                        <button>Agregar al Carrito</button>
+                    </div>
+                <%} %>
 
-                <div class="producto">
+<!--                <div class="producto">
                     <img src="ruta-imagen1.jpg" alt="Camisa de hombre">
                     <h2>Camisa de Hombre</h2>
                     <p class="precio">$39.99</p>
@@ -66,7 +75,7 @@
                     <p class="precio">$49.99</p>
                     <p class="descripcion">Vestido elegante con diseño floral perfecto para el otoño.</p>
                     <button>Agregar al carrito</button>
-                </div>
+                </div>-->
         
             </div>
 
