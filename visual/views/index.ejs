@@ -29,9 +29,9 @@
             <div class="contenedor-producto">
                 <% for (let i = 0;i < productos.length; i++) {%>
                     <div class="producto">
-<!--                         <img src="#" alt="#"> -->
+                        <img src="/img/<%- productos[i].image %>" alt="#">
                         <h2><%= productos[i].name %></h2>
-                        <p><%= productos[i].price %></p>
+                        <p>$ <%= productos[i].price %></p>
                         <p><%= productos[i].description %></p>
                         <button>Agregar al Carrito</button>
                     </div>
