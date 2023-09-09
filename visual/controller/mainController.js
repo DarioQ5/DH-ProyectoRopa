@@ -1,11 +1,16 @@
+const fs = require('fs');
 const path = require('path');
 
-const productos = require('../dataBase/productos')
+const products = path.join(__dirname, 'dataBase', 'productos.json');
+
+const productos = require('../dataBase/productos.json');
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const mainController = {
     renderHome: (req, res) => {
+        const productos = require('../dataBase/productos.json');
        
-        res.render('index', {'productos': productos});
+        res.render('index', {productos: productos});
     },
     renderLogin: (req, res) => {
         res.render('login');
