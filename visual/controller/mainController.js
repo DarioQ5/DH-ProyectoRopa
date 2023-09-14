@@ -19,7 +19,8 @@ const mainController = {
         res.render('productCart');
     },
     renderProductDetail: (req, res) => {
-        res.render('productDetail');
+        const productSearch = productos.find((producto) => producto.id === req.params.id)
+        res.render('productDetail', {products : productSearch});
     },
     renderRegistration: (req, res) => {
         res.render('registration');

@@ -10,11 +10,29 @@
     </header>
 
     <main>        
-
+        <div>
+            <div>
+              <img
+                src="/img/<%- products.image %>"
+                alt="<%- products.name %>"
+              />
+              <h1>
+                <%- products.name %>
+              </h1>
+              <br />
+              <h4>
+                <%- products.description %>
+              </h4>
+              <p>
+                $ <%- products.price %>
+              </p>
+            </div>
+          </div>
     </main>
 
     <footer>
-       
+       <!--Footer-->
+       <%- include('./partials/footer.ejs') %>
     </footer>
     
 </body>
