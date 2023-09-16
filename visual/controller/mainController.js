@@ -10,7 +10,7 @@ const mainController = {
     renderHome: (req, res) => {
         const productos = require('../dataBase/productos.json');
        
-        res.render('index', {productos: productos});
+        res.render('index', {productos : productos});
     },
     renderLogin: (req, res) => {
         res.render('login');

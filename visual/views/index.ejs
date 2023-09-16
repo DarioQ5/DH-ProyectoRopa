@@ -30,7 +30,7 @@
                 <% for (let i = 0;i < productos.length; i++) {
                     if(productos[i].tipo == "Hombre"){%>
                     <div class="producto">
-                        <img src="/img/<%- productos[i].image %>" alt="#">
+                        <a href="/productDetail/<%- productos[i]?.id %>"><img src="/img/<%- productos[i].image %>" alt="#"></a>
                         <h2><%= productos[i].name %></h2>
                         <p>$ <%= productos[i].price %></p>
                         <p><%= productos[i].description %></p>
@@ -49,7 +49,7 @@
                 <% for (let i = 0;i < productos.length; i++) {
                     if(productos[i].tipo == "Mujer"){%>
                     <div class="producto">
-                        <img src="/img/<%- productos[i].image %>" alt="#">
+                        <a href="/productDetail/<%- productos[i]?.id %>"><img src="/img/<%- productos[i].image %>" alt="#"></a>
                         <h2><%= productos[i].name %></h2>
                         <p>$ <%= productos[i].price %></p>
                         <p><%= productos[i].description %></p>
@@ -69,7 +69,7 @@
                 <% for (let i = 0;i < productos.length; i++) {
                     if(productos[i].tipo == "Niños"){%>
                     <div class="producto">
-                        <img src="/img/<%- productos[i].image %>" alt="#">
+                        <a href="/productDetail/<%- productos[i]?.id %>"><img src="/img/<%- productos[i].image %>" alt="#"></a>
                         <h2><%= productos[i].name %></h2>
                         <p>$ <%= productos[i].price %></p>
                         <p><%= productos[i].description %></p>
