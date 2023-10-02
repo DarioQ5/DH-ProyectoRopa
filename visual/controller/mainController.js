@@ -12,9 +12,6 @@ const mainController = {
        
         res.render('index', {productos : productos});
     },
-    renderLogin: (req, res) => {
-        res.render('login');
-    },
     renderProductCart: (req, res) => {
         res.render('productCart');
     },
@@ -22,9 +19,6 @@ const mainController = {
         const productSearch = productos.find((producto) => producto.id === req.params.id)
         res.render('productDetail', {products : productSearch});
     },
-    renderRegistration: (req, res) => {
-        res.render('registration');
-    }
 };
 
 module.exports = mainController;
