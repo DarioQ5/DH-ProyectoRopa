@@ -1,7 +1,7 @@
 const {check ,  validationResult} = require('express-validator');
 
 const arrValidate = [
-    check('user').notEmpty().withMessage('Debes completar este campo')
+    check('correo').notEmpty().withMessage('Debes completar')
 ];
 
 const validationSearch = ( req, res, next ) =>{

@@ -13,7 +13,7 @@ const { arrRegister, validateRegister } = require('../middlewares/validateRegist
 router.get('/', arrValidate, validationSearch, validateAdmin, userController.render);
 router.get('/login/:id', userController.renderLogin);
 
-router.get('/register', userController.renderRegistration);
-router.post('/register',upload.single('avatar'), arrRegister, validateRegister, userController.createUser);
+router.get('/registration', userController.renderRegistration);
+router.post('/registration',upload.single('avatar'), arrRegister, validateRegister, userController.createUser);
 
 module.exports = router;

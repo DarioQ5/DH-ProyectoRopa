@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const data = require('../dataBase/users.json');
 
 const arrRegister = [
-    body('username').notEmpty().withMessage('Ingresar nombre de usuari@'),
+    body('nombre').notEmpty().withMessage('Ingresar nombre'),
     body('email').notEmpty().withMessage('Ingresar tu email').bail().isEmail().withMessage('Ingresar email válido'),
     body('password').notEmpty().withMessage('Ingresar contraseña')
 ];

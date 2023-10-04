@@ -4,7 +4,8 @@ const express = require('express');
 const logger = require('morgan');
 const session = require('express-session');
 const app = express();
-const mainRouter = require('./router/main')
+const mainRouter = require('./router/main');
+const usersRouter = require('./router/users');
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
@@ -14,9 +15,9 @@ const port = 3000;
 app.listen(port, () => console.log('Server up: ' + port) );
 
 app.use('/',mainRouter);
+app.use('/users',usersRouter);
 
-const usersRouter = require('./router/users');
-//app.use('/admin', adminRouter);
+
 app.use((req, res, next) => next(createError(404)));
 
 // ************ error handler ************
