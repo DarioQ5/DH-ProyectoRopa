@@ -12,6 +12,15 @@ const mainController = {
        
         res.render('index', {productos : productos});
     },
+    search: (req, res) => {
+		const { keywords } = req.query
+
+		const productsSearch = productos.filter(( product ) => product.name.toLowerCase().includes(keywords.toLowerCase()))
+
+		res.render('search', { 
+			results: productsSearch 
+		})
+	},
     renderProductCart: (req, res) => {
         res.render('productCart');
     },

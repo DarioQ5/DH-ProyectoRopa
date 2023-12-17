@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--Fuente-->
+    <%- include('./partials/head.ejs') %>
+<body>
+    <header>
+        <!--Navbar-->
+        <%- include('./partials/navbar.ejs') %>
+        
+    </header>
+
+    <main>        
+        <div>
+                <div>
+                    <h5>Resultados de la búsqueda: <%= results.length %></h5>
+                </div>
+                <% if(results.length > 0){ %>
+                    <% results.forEach((prod) => { %>
+                        <div>
+                            <section>
+                                <a href="/productos/<%= prod.id %>">
+                                    <figure>
+                                        <a href="/productDetail/<%- prod.id %>"><img src="/img/<%- prod.image %>" alt="#"></a>
+                                    </figure>
+                                    <article>
+                                        <h2>
+                                            $<%= prod.price %>
+                                        </h2>
+                                        <p>
+                                            <%= prod.description %>
+                                        </p>
+                                    </article>
+                                </a>
+                            </section>
+                        </div>
+                    <% }) %>
+    
+                <% } else { %>
+                    <div>
+                        <h5 style="color: tomato;">No hay productos que coincidan con esa búsqueda</h5>
+                    </div>
+    
+                <% } %>
+    
+    
+        </div>
+        
+    </main>
+
+    <footer>
+       <!--Footer-->
+       <%- include('./partials/footer.ejs') %>
+    </footer>
+    
+</body>
+</html>
